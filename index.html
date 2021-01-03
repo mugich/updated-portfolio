@@ -1,35 +1,189 @@
 <!DOCTYPE html>
-
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" 
-    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<head>
+	<title>Portfolio</title>
+	<!-- css files -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.min.css">
+	<link rel="stylesheet" type="text/css" href="./style.css">
+
+	<link rel="icon" type="image/x-icon" href="assets/images/">
+	<meta name="author" content="Mugi Ch">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+	<body>
     
-  </head>
-  <body>
-    <div class="jumbotron"></div>
-   
-      <h1 class="display-4">Mugi Chultemsuren</h1>
-      <p class="lead">
-        Welcome to my developing portfolio site. I just finished Flatiron Bootcamp,
-        and after a lifetime of learning, I am excited about looking for my first professional development role..</p>
-      <hr class="my-4">
-      
-      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-    </div>
-    <!-- Just an image -->
-    <!-- <nav class="navbar navbar-light bg-light">
-      <a class="navbar-brand" href="#">
-        <img src="./images/portfolio-background-header.jpg" width="30" height="30" alt="" loading="lazy">
-      </a>
-    </nav> -->
-   
-    <script src="script.js"></script>
-  </body>
+    
+		<!-- Navbar -->
+		<nav class="nav container void-background">
+			<!-- This "nav-menu" is hidden on mobile -->
+			<!-- Add the modifier "is-active" to display it on mobile -->
+			<div class="nav-left">
+				<a href="" class="nav-item">
+					<span class="icon">
+						<i class="fa fa-li"></i>
+					</span>
+				</a>
+				<a href="https://github.com/mugich" class="nav-item">
+					<span class="icon">
+						<i class="fa fa-github"></i>
+					</span>
+				</a>
+				<a href="https://www.linkedin.com/in/mugi-chultemsuren-a730a512b/" class="nav-item">
+					<span class="icon">
+						<i class="fa fa-linkedin"></i>
+					</span>
+				</a>				
+			</div>
+
+			<div class="nav-right nav-menu">
+				<a class="nav-item" href="#about">About</a>
+				<a class="nav-item" href="#projects">Projects</a>
+				<a class="nav-item" href="#social">Social</a>
+			</div>
+
+			<!-- This "nav-toggle" hamburger menu is only visible on mobile -->
+			<!-- JavaScript to toggle the "is-active" class on "nav-menu" -->
+			<span class="nav-toggle">
+				<span></span>
+				<span></span>
+				<span></span>
+			</span>
+    </nav>
+    
+				
+		<!-- About Me -->
+		<section id="about" class="section section-1">
+			<div class="container has-text-centered">
+			
+				<img class="avatar" src="./assets/images/profile-img.png">
+			</div>
+			<div class="container"></br>
+				<p class="intro">
+					Hi! I am a Full-Stack Developer. I am currently enrolled in a bootcamp
+					 at Georgia Tech University for coding in the Atlanta area.
+						I have a background in Network Engineering for 5 years. 
+				</p>
+			</div>
+		</section>
+		
+		<!-- Projects -->
+		<section  id="projects" class="section section-2">
+			<div class="container">
+				<div class="has-text-centered">
+					<h3 class="title is-3">Projects</h3>
+				</div>
+				
+				<div class="columns is-multiline is-desktop">
+					<!-- Project 1 -->
+					<div class="column">
+						
+						<div class="box project-text">
+							<article>
+								<div>
+									<div class="project-title">What is in the box?</div>
+									<figure class="image project-figure">
+										<img src="./assets/images/whatIsInTheBox.png" alt="Image">
+									</figure>
+								</div>
+								<div>			
+									<p> This is the first project I worked as a team member. We developed this project only 3 weeks into class.
+										This application that allows 
+										the user to name and create a list of contents converted into a printable QR label. Furthermore, 
+										the user can scan the code with their phone's camera app and be taken to a link displaying their 
+										box content and search for the nearest charity organizations.
+										
+									</p>
+									<a href="https://github.com/pkriengsiri/whats-in-the-box">Project deployed link</a>
+								</div>
+							</article>
+						</div>
+					</div>
+					<!-- Project 2 -->
+					<div class="column">
+						<div class="box project-text">
+							<article>
+								<div>
+									<div class="project-title">Weather Dashboard</div>
+									<figure class="image project-figure">
+										<img src="./assets/images/weatherDashboard.png" alt="Image">
+									</figure>
+								</div>
+								<div>			
+									<p>
+										This was one of the homework projects that I worked on my own. 
+										This weather dashboard application with search functionality to find a 
+										weather condition of a given city and 5 day forecast. The server side API 
+										OpenWeather API used to retrieving data from their own data content.
+										This app will run in the browser and feature dynamically updated HTML, 
+										CSS and powered by jQuery and Ajax.
+										
+									</p>
+									<a href="https://mugich.github.io/api-weather-dashboard/">Project deployed link</a>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Social -->
+		<section id="social" class="section section-3">
+			<div class="container">
+				<div class="has-text-centered">					
+					<h3 class="title is-3">Contact</h3>
+				</div>
+				<div class="row">
+				</div>
+				<div class="social-container columns">
+
+					<div class="column is-3">						
+						<a href="https://github.com/mugich" class="nav-item">
+							<span class="icon">
+								<i class="fa fa-github"> mugich</i>
+							</span>
+						</a>										
+					</div>
+					<div class="column is-3">
+						<a href="https://www.linkedin.com/in/mugi-chultemsuren-a730a512b/" class="nav-item">
+							<span class="icon">
+								<i class="fa fa-linkedin"> mugich</i>
+							</span>
+						</a>					
+					</div>
+
+					<div class="column is-3">	
+
+						<a href="" class="nav-item">
+							<span class="icon">
+								<i class="fa fa-phone"></i>
+								
+							</span>
+							<i> : 443-554-8947</i>
+						</a>						
+					</div>
+					
+					<div class="column is-3">
+						<a href="" class="nav-item">
+							<span class="icon">
+								<i class="fa fa-envelope"> munkhuu1233@gmail.com</i>
+							</span>
+						</a>					
+					</div>
+					
+				</div>
+			</div>
+		</section>	
+		
+		<!-- Footer -->
+		<section class="section-4 has-text-centered container">
+			<div class="">
+			© 2020 Copyright:
+		</div>
+		</section>
+		
+		<!-- Scripts  -->
+		<script src="./script.js"></script>		
+	</body>	
 </html>
