@@ -13,4 +13,4 @@ My updated portfolio displays my GitHub & LinkedIn profile page, as well as my e
 * [GitHub repository](https://github.com/mugich/updated-portfolio)
 
 ### Portfolio's design
-![screenshot](../assets/images/portfolio.png)
+![screenshot](./assets/images/portfolio.png)
